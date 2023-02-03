@@ -1,0 +1,100 @@
+.color-list {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.color-picker {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #d3b9f4;
+  border-radius: 50%;
+  font-size: 0;
+}
+
+.color-picker-checker {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #d3b9f4;
+  border-radius: 50%;
+  font-size: 0;
+
+  background-image: linear-gradient(45deg, silver 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, silver 25%),
+    linear-gradient(-45deg, silver 25%, transparent 25%),
+    linear-gradient(-45deg, transparent 75%, silver 75%);
+  background-size: 10px 10px;
+  background-position: 0 0, -5px 5px, 0 -5px, 5px 0;
+}
+
+.color-picker-rainbow {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #d3b9f4;
+  border-radius: 50%;
+  font-size: 0;
+  background-image: conic-gradient(
+    from 135deg at 50% 50%,
+    #ff0000 0deg,
+    #ff5c00 72.37deg,
+    #ffe600 149.25deg,
+    #00ff57 222.37deg,
+    #0038ff 286.12deg,
+    #bf007e 360deg
+  );
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.color-picker-rainbow::-webkit-color-swatch {
+  border-radius: 50%;
+  border: none;
+  background-image: conic-gradient(
+    from 135deg at 50% 50%,
+    #ff0000 0deg,
+    #ff5c00 72.37deg,
+    #ffe600 149.25deg,
+    #00ff57 222.37deg,
+    #0038ff 286.12deg,
+    #bf007e 360deg
+  );
+}
+.color-picker-rainbow::-moz-color-swatch {
+  border-radius: 50%;
+  border: none;
+  background-image: conic-gradient(
+    from 135deg at 50% 50%,
+    #ff0000 0deg,
+    #ff5c00 72.37deg,
+    #ffe600 149.25deg,
+    #00ff57 222.37deg,
+    #0038ff 286.12deg,
+    #bf007e 360deg
+  );
+}
+
+.color-picker--active {
+  border: 3px solid #8b41e9;
+}
+
+.color-picker--active::before {
+  position: absolute;
+  top: 40%;
+  left: 28%;
+  content: '';
+
+  display: inline-block;
+  width: 12px;
+  height: 6px;
+  border: 3px solid #8b41e9;
+  border-top: 0;
+  border-right: 0;
+  transform: rotate(-45deg);
+  transform-origin: 25% 25%;
+  order: 1;
+}

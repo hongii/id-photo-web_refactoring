@@ -1,0 +1,109 @@
+.screen-reader-only {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #d3b9f4;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.intro {
+  max-width: 316px;
+  /* padding-top: 47px; StatusBar height = 47px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+
+  color: #f5f5f5;
+}
+
+.picture-container {
+  position: relative;
+  min-width: 414px;
+  height: 500px;
+}
+
+.picture1 {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 235px;
+  height: 235px;
+  left: 0;
+  top: 0;
+
+  filter: drop-shadow(0px 4px 4px 0px rgba(0, 0, 0, 0.25));
+}
+
+.picture2 {
+  position: absolute;
+  width: 235px;
+  height: 235px;
+  right: 0;
+  top: 100px;
+
+  filter: drop-shadow(0px 0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.picture3 {
+  position: absolute;
+  width: 245px;
+  height: 245px;
+  left: 20.5%;
+  bottom: 0px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.start-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 6px;
+
+  width: 200px;
+  height: 50px;
+
+  background: #f7f5ff;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.start-btn__label {
+  width: 75px;
+  height: 24px;
+
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  letter-spacing: 0.2px;
+  color: #3a00e5;
+  white-space: nowrap;
+  cursor: pointer;
+}

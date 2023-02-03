@@ -1,0 +1,38 @@
+.hair-style-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+  width: 100%;
+  padding: 4% 0;
+}
+
+.hair-style-select__item {
+  position: relative;
+  width: 20%;
+  aspect-ratio: 3 / 4;
+  border-radius: 10px;
+}
+
+.hair-style-select__item img {
+  border-radius: 10px;
+}
+
+.hair-style-select__item--checked {
+  filter: opacity(0.5) drop-shadow(0 0 0 rgb(0, 0, 0));
+}
+
+.hair-style-select__item--checked::after {
+  content: ' ';
+  width: 16px;
+  height: 16px;
+  border: 4px solid white;
+  border-top: 0;
+  border-right: 0;
+  transform: rotate(-45deg) translateX(-8px) translateY(-8px);
+  transform-origin: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  z-index: 1;
+}

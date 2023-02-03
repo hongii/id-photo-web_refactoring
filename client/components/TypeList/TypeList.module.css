@@ -1,0 +1,42 @@
+.type-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.type-select__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+}
+
+.type-select__btn {
+  border: none;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #aaaaaa;
+  background-color: inherit;
+  box-sizing: border-box;
+  padding: 0;
+  padding-top: 3px;
+}
+
+.type-select__btn--active {
+  color: black;
+}
+
+.type-select__bar {
+  color: black;
+  font-size: 0px;
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  margin-top: 3px;
+  border-right: 2px solid black;
+}
